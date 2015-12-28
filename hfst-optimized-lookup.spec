@@ -1,17 +1,16 @@
 Summary:	Morphological analysis using a fast lookup transducer
 Summary(pl.UTF-8):	Analiza morfologiczna przy użyciu szybko wyszukującego automatu z wyjściem
 Name:		hfst-optimized-lookup
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	Apache v2.0
 Group:		Applications/Text
 Source0:	http://downloads.sourceforge.net/hfst/%{name}-%{version}.tar.gz
-# Source0-md5:	26d069419d6e679d2fe5a9abf251d6aa
+# Source0-md5:	87e1084f716840e3a6ac050da15434a3
 URL:		http://hfst.sourceforge.net/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
-BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,9 +23,6 @@ automatów z wyjściem, zoptymalizowaną pod kątem szybkości.
 
 %prep
 %setup -q
-
-# drop optflags override
-sed -i -e '/^CXXFLAGS="-Wall/d' configure.ac
 
 %build
 %{__aclocal}
