@@ -2,7 +2,7 @@ Summary:	Morphological analysis using a fast lookup transducer
 Summary(pl.UTF-8):	Analiza morfologiczna przy użyciu szybko wyszukującego automatu z wyjściem
 Name:		hfst-optimized-lookup
 Version:	1.3
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Applications/Text
 Source0:	http://downloads.sourceforge.net/hfst/%{name}-%{version}.tar.gz
